@@ -1,0 +1,168 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    title: "Frisco Heart Design Cat Collar",
+    price: 5.59,
+    description: "Features a classic metal-buckle design, and a row of metal heart studs on a faux leather collar. Collar is 3/8” wide and is adjustable to fit necks from 8-12”, with an elastic separator that allows an extra 0.5” of stretch for your pet’s safety.",
+    category: "Cat",
+    image: "https://image.chewy.com/is/image/catalog/324512_MAIN._AC_SL1200_V1657656817_.jpg"
+  },
+  {
+    _id: 2,
+    title: "Frisco Dog & Cat Nail Clippers",
+    price: 6.56,
+    description: "Japanese high-carbon steel blades offer long-lasting sharpness and durability to trim cat or dog nails quick and clean anytime. Semi-circular blade shape allows you to see exactly where you’re cutting for more precision cuts.",
+    category: "Cat",
+    image: "https://image.chewy.com/is/image/catalog/206880_MAIN._AC_SL1200_V1590671477_.jpg"
+  },
+  {
+    _id: 3,
+    title: "Frisco Cactus Cat Scratching Post",
+    price: 26.99,
+    description: "This sisal-wrapped scratching post promotes satisfying scratching and healthy cat nails.",
+    category: "Slepp & Scratch",
+    image: "https://image.chewy.com/is/image/catalog/214357_MAIN._AC_SL1200_V1606832413_.jpg"
+  },
+  {
+    _id: 4,
+    title: "Frisco Modern Tunnel Elevated Cat Bed",
+    price: 60.15,
+    description: "Modern tunnel elevated bed for cats to cuddle up in.",
+    category: "Beds",
+    image: "https://image.chewy.com/is/image/catalog/214365_MAIN._AC_SL1200_V1606832514_.jpg"
+  },
+  {
+    _id: 5,
+    title: "Yaheetech Cat Scratching Tree",
+    price: 69.99,
+    description: "This cat tree is designed for two to three cats weighing 10 pounds or less—it’s purr-fect for Siamese cats, Exotic shorthairs, Devon Rexes, Abyssinians and other small- and medium-sized breeds.",
+    category: "Trees & Condos",
+    image: "https://image.chewy.com/is/image/catalog/306487_MAIN._AC_SL1200_V1679607500_.jpg"
+  },
+  {
+    _id: 6,
+    title: "Coziwow by Jaxpety Collapsible Cat Tunnel Bed",
+    price: 37.99,
+    description: "Made from soft, plush fabric, this hideout features a large tunnel, a comfy, detachable cotton bed and two irresistible scratching toys.",
+    category: "Tunnels",
+    image: "https://image.chewy.com/is/image/catalog/313503_MAIN._AC_SL1200_V1663797794_.jpg"
+  },
+  {
+    _id: 7,
+    title: "Frisco Sushi Plush Cat Toy with Catnip, 4 count",
+    price: 5.95,
+    description: " This bento box includes three different sushi rolls and a tasty wasabi packet, covered in soft fabric that’s great for batting, clawing, and biting.",
+    category: "Plush & Mice Toys",
+    image: "https://image.chewy.com/is/image/catalog/213910_MAIN._AC_SL1200_V1590069698_.jpg"
+  },
+  {
+    _id: 8,
+    title: "Casa Leo Leo's Loo Covered Automatic Self-Cleaning Cat Litter Box",
+    price: 449.99,
+    description: "Automatically cleans itself after each use by separating waste from clean litter and depositing it in the enclosed waste drawer underneath.",
+    category: "Litter & Accesories",
+    image: "https://image.chewy.com/is/image/catalog/257260_MAIN._AC_SL1200_V1657656397_.jpg"
+  },
+  {
+    _id: 9,
+    title: "Way Basics zBoard Paperboard Modern Enclosed Cat Litter Box",
+    price: 88.99,
+    description: "Crafted from eco zBoard Recycled Paperboard, which is non-toxic and free of formaldehyde and VOC, making it safe for your pet and the environment!",
+    category: "Furniture & Enclosures",
+    image: "https://image.chewy.com/is/image/catalog/280425_MAIN._AC_SL1200_V1690291556_.jpg"
+  },
+  {
+    _id: 10,
+    title: "iPrimio Cat Litter Trapper EZ Clean Mat",
+    price: 34.99,
+    description: "The iPrimio Cat Litter Trapper EZ Clean Mat helps keep litter box messes contained and not spread throughout the house. Litter falls through the large holes on the top layer and stays trapped underneath.",
+    category: "Litter & Accesories",
+    image: "https://image.chewy.com/is/image/catalog/107174_MAIN._AC_SL1200_V1579640348_.jpg"
+  },
+  {
+    _id: 11,
+    title: "Litter Genie Cat Litter Disposal System",
+    price: 39.99,
+    description: "A fresher home in just 3 easy steps. Scoop clumps from the litter box, open the lid and drop the clumps, and pull the handle to lock away litter and odors.",
+    category: "Litter & Accesories",
+    image: "https://image.chewy.com/is/image/catalog/780766_MAIN._AC_SL1200_V1688150081_.jpg"
+  },
+  {
+    _id: 12,
+    title: "PATPET Timed Automatic Smart Feeder for Dog & Cat Food Dispenser with 10s Voice Recorder, 4-L",
+    price: 69.99,
+    description: "Automatic feeder’s touch screen design is easy to use.Features a paw-some voice recorder, so you can record a message for your furry friend. Moisture-proof, airtight feeder keeps food fur-esh.",
+    category: "Bowls & Feeders",
+    image: "https://image.chewy.com/is/image/catalog/521686_MAIN._AC_SL1200_V1685474633_.jpg"
+  },
+  {
+    _id: 13,
+    title: "Petlibro Dockstream Battery Operated Cat Water Fountain",
+    price: 62.99,
+    description: "Wireless design lets you place the fountain anywhere. Innovative safety features, option to plug the fountain in when needed. Choose from regular or induction water modes. Silent operation. Plenty of power.",
+    category: "Bowls & Feeders",
+    image: "https://image.chewy.com/is/image/catalog/842454_MAIN._AC_SL1200_V1684348729_.jpg"
+  },
+  {
+    _id: 14,
+    title: "Sheba Meaty Tender Sticks Chicken Flavor Soft Adult Cat Treats",
+    price: 1.98,
+    description: "Meaty and tender sticks in an appetizing chicken flavor that cats will love. The soft texture allows for easy breaking and chewing, which allows for piece-by-piece feeding.",
+    category: "Treats",
+    image: "https://image.chewy.com/is/image/catalog/109828_MAIN._AC_SL1200_V1675959794_.jpg"
+  },
+  {
+    _id: 15,
+    title: "Purina Fancy Feast Purely Natural Chicken, Tuna & Salmon Variety Pack Soft Cat Treat",
+    price: 3.49,
+    description: "Made with pure, 100 percent natural hand-selected proteins like chicken, tuna and salmon, cooked and pieced to perfection.",
+    category: "Treats",
+    image: "https://image.chewy.com/is/image/catalog/102871_MAIN._AC_SL1200_V1560956290_.jpg"
+  },
+  {
+    _id: 16,
+    title: "Fancy Feast Gravy Lovers Poultry & Beef Feast Variety Pack Canned Cat Food",
+    price: 19.99,
+    description: "Grain-free cat food made without artificial colors or preservatives. Made with high-quality ingredients like real turkey, chicken and beef to deliver 100% complete and balanced nutrition for adult cats.",
+    category: "Food",
+    image: "https://image.chewy.com/is/image/catalog/75978_MAIN._AC_SL1200_V1690484471_.jpg"
+  },
+  {
+    _id: 17,
+    title: "Fancy Feast Classic Seafood Feast Variety Pack Canned Cat Food",
+    price: 19.99,
+    description: "Grain-free cat food made without artificial colors or preservatives. Made with real cod, sole and shrimp; savory salmon; or ocean whitefish and tuna as the number one ingredient with a smooth pate texture.",
+    category: "Food",
+    image: "https://image.chewy.com/is/image/catalog/76047_MAIN._AC_SL1200_V1695499612_.jpg"
+  },
+  {
+    _id: 18,
+    title: "Fancy Feast Classic Collection Chicken & Beef Pate Variety Pack Canned Cat Food, 3-oz can, case of 24",
+    price: 19.99,
+    description: "Grain-free cat food made without artificial colors or preservatives. Crafted with real chicken or beef as the number one ingredient with a smooth pate texture.",
+    category: "Food",
+    image: "https://image.chewy.com/is/image/catalog/215047_MAIN._AC_SL1200_V1690404801_.jpg"
+  },
+  {
+    _id: 19,
+    title: "Fancy Feast Poultry & Beef Classic Pate Variety Pack Canned Cat Food",
+    price: 19.99,
+    description: "Grain-free cat food made without artificial colors or preservatives. Features three whisker-licking flavors—Tender Beef Feast, Classic Chicken Feast, Classic Turkey & Giblets.",
+    category: "Food",
+    image: "https://image.chewy.com/is/image/catalog/76049_MAIN._AC_SL1200_V1674079842_.jpg"
+  },
+  {
+    _id: 20,
+    title: "Purina Cat Chow Naturals Original with Added Vitamins, Minerals & Nutrients Dry Cat Food",
+    price: 26.00,
+    description: "Natural nutrition with high-quality ingredients like real chicken as the #1 ingredient for a taste your cat will enjoy. Purina cat food made with real salmon and whole grains formulated for all life stages.",
+    category: "Food",
+    image: "https://image.chewy.com/is/image/catalog/211440_MAIN._AC_SL1200_V1695677502_.jpg"
+  }
+])
